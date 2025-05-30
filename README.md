@@ -1,66 +1,86 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h2>“Isabela State University Attendance System”<h2>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Members:
 
-## About Laravel
+<b>Chris Lloyd Fallaria</b>
+<b>Princessmae Pinera</b>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Software Description
+The Isabela State University Staff Attendance System is a web-based platform designed to streamline and 
+manage the attendance records of teaching personnel within the university. Developed using web technologies, this system provides functionalities for staff registration, logging of time-in and time-out, and generating attendance overviews. The system aims to replace traditional methods of attendance tracking with a more efficient and digital approach.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Key Features of the System Include:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<b>Staff Registration:</b> A module for administrators to add new staff members to the system, capturing essential details such as ID number, name, and department.
+<b>Time Logging:</b> A user-friendly interface for staff members to record their time of arrival (Time-In) and departure (Time-Out).
+<b>Attendance Logs:</b> A comprehensive record of staff attendance, displaying individual time-in and time-out entries along with the corresponding dates.
+<b>Staff List Management:</b> A module to view and manage the registered staff members, allowing for editing and deletion of records.
+<b>Attendance Overview:</b> A visual representation of attendance data through bar charts, providing insights into staff presence over specific periods.
+<b>Secure Login:</b> A login portal for authorized users (likely administrators and potentially staff) to access the system's functionalities.
 
-## Learning Laravel
+<b>Problems of the Existing System:</b>
+Based on the observation of the current process of using the potential problems with the existing attendance tracking methods at Isabela State University might include:
+<b>Potential for Manipulation:</b> Manual records might be susceptible to tampering or inaccuracies.
+<b>Familiarity for Some Users:</b> Staff who have been using manual systems for a while might be familiar with the underlying principles of attendance logging, potentially easing the transition to a digital system. 
+<b>Direct Physical Evidence (Potentially):</b> Manual logs, when properly maintained, can offer direct physical 
+evidence of attendance, which might have been perceived as a reliable method in the past.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Scope of the Proposed System 
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+The proposed Isabela State University Staff Attendance System aims to address the limitations of manual 
+attendance tracking by providing a digital and centralized platform. The system is designed to improve 
+efficiency, accuracy, and accessibility of attendance management for teaching personnel.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<b>The Key Features and Functionalities of the Proposed System Include:</b>
 
-## Laravel Sponsors
+<b>User Management:</b>
+ Staff registration with fields for ID Number, First Name, Last Name, Middle Initial, and Department.
+ Functionalities for administrators to add, view, edit, and delete staff records.
+ Secure login for system access.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<b>Attendance Tracking:</b>
+- A dedicated interface for staff to log their Time In and Time Out.
+- Automatic recording of timestamps for entry and exit.
+- A comprehensive log displaying the date, Time In, and Time Out for each staff member.
 
-### Premium Partners
+<b>Attendance Reporting:</b>
+- Generation of visual reports, such as bar charts, to summarize attendance data over specified periods.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<b>User Interface:</b>
+- A web-based interface accessible through standard web browsers.
+- A navigation menu for easy access to different modules (Home, Staff List, Logs, Add New Staff, Log
+Out).
+- User-friendly forms for data input and display.
+- The system utilizes a client-server architecture, where users interact with the web interface (client) to access and manage attendance data stored on a server.
 
-## Contributing
+## Key Interfaces of the Staff Attendance System:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<b>Login Page:</b> Features fields for Email and Password, along with a "Login" button and a separate "Staff Attendance" button (potentially for a simplified time-in/out interface).
 
-## Code of Conduct
+![Login Screenshot](public/images/login.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<b>Staff Registration Form:</b> Includes input fields for "ID Number," "First Name," "Last Name," "Middle Initial," and "Department," with a "Save" button.
 
-## Security Vulnerabilities
+![Staff Screenshot](public/images/new_staff.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<b>Staff List:</b> Displays a table with columns for "No. #," "ID Number," "Firstname," "Middle Initial," "Lastname," "Department," and "Actions" (Edit and Delete buttons for each staff member).
 
-## License
+![Staff_List Screenshot](public/images/staff_list.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<b>Attendance Logs:</b> Presents a table with columns for "No. #," "ID Number," "Time In," and "Time Out," showing the timestamps of staff attendance records.
+
+![Staff_Record Screenshot](public/images/time_record.png)
+
+<b>Attendance Bar Chart:</b> A visual representation of "Staff Attendance Data" over different dates (e.g., 2024-08-21, 2024-12-09, 2024-12-07).
+
+![Chart Screenshot](public/images/chart.png)
+
+<b>Student Time In/ Out:</b> A separate interface, possibly for a different user group (students), featuring an input field for "ID Number" and buttons for "Time In" and "Time Out," along with the Isabela State University logo.
+
+This Staff Attendance System offers a significant step towards modernizing attendance management within Isabela State University, providing a more efficient, accurate, and accessible solution for administrators and teaching staff.
+
+![Time Screenshot](public/images/time_in_out.png)
+
+<b>WireFrame</b>
+
+![Wireframe Screenshot](public/images/wireframe.png)
